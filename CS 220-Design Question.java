@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    // Use enum to reduce possibility of error
+    // Use enum to reduce the possibility of an error
     public enum VisitType{
         EMERGENCY,
         REGULAR
