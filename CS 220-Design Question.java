@@ -2,7 +2,11 @@ import java.util.*;
 
 public class Main {
 
-    // Information stored in the tablet
+    // Use enum to reduce possibility of error
+    public enum VisitType{
+        EMERGENCY,
+        REGULAR
+    }
     class Appointment {
         String clientName;
         String visitType; 
@@ -23,7 +27,7 @@ public class Main {
         // Method to add appointments to the appropriate queue
         public void appointmentQueue(String clientName, String visitType, String helpDescription) {
             Appointment a = new Appointment(clientName, visitType, helpDescription);
-            if (visitType.equals("Emergency")) {
+            if (visitType==VisitType.EMERGENCY) {
                 eq.add(a);  // Add to emergency queue if it's an emergency
             } else {
                 rq.add(a);  // Add to regular queue if it's a regular visit
@@ -64,6 +68,7 @@ public class Main {
         }
     }
 }
+
 
 
     
