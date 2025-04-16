@@ -1,6 +1,6 @@
 import java.util.*;
 // Design exercise 2
-//Problem 1 Design Expectations:
+//Question 1 Design Expectations:
 //Address book should be able to search by either name or phone number (hashmap with key and value optimal with O(1) time complexity?)
 //number can correspond to multiple people (example=landline)
 //Name can correspond to multiple phone numbers (office, two phones, who knows?)
